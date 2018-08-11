@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func VigenereEncrypt(message, key string) []string {
+func VigenereEncrypt(message, key string) string {
 	fmt.Println("Encrypting")
-	return []string{""}
+	return ""
 }
