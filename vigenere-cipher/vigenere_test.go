@@ -23,8 +23,8 @@ func TestVigenereEncryptionOfMessageOfSameLengthAsKey(t *testing.T) {
 
 func TestVigenereEncryptionOfMessageLongerThanKey(t *testing.T) {
 	cipherText := VigenereEncrypt("testmessagethatisnoneofyourbusiness", "racetrack")
-        expectedEncryptedText := "keuxfvsukxevltkiuxfngsypowbsuumgvsu"
+	expectedEncryptedText := "keuxfvsukxevltkiuxfngsypowbsuumgvsu"
 	if cipherText != expectedEncryptedText {
-                t.Errorf("Encryption error for string of greater length than key, expected %s, got %s", expectedEncryptedText, cipherText)
-        }
+		t.Errorf("Encryption error for string of greater length than key, expected %s, got %s", expectedEncryptedText, cipherText)
+	}
 }
